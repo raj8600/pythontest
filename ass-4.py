@@ -1,22 +1,19 @@
-import numpy as np
+#Assignment-04
+#Palindorme program
+# Ask the user for a string
+string = input("Enter a string: ")
 
-# Define two matrices of equal width for vertical concatenation
-A = np.array([[1, 2, 3],
-              [4, 5, 6],
-              [7, 8, 9]])
-B = np.array([[10, 11, 12],
-              [13, 14, 15],
-              [16, 17, 18]])
+# Reverse the string
+reverse_string = string[::-1]
 
-# Print the original matrices
-print("Matrix A:")
-print(A)
-print("Matrix B:")
-print(B)
+# Check if the string is equal to its reverse
+if string == reverse_string:
+    print("The string is a palindrome!")
+else:
+    print("The string is not a palindrome.")
 
-# Concatenate the matrices vertically
-C = np.concatenate((A, B), axis=0)
 
-# Print the concatenated matrix
-print("Concatenated Matrix:")
-print(C)
+#Output-
+#Enter a string: nitin
+#The string is a palindrome!
+
